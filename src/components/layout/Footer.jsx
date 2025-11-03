@@ -1,4 +1,4 @@
-import '../../Global.css';
+import '../../GLobal.css';
 import { Ar_Logo_Footer } from '../../assets/images/assets';
 import { Ar_Ico } from '../../assets/icons/assets';
 
@@ -306,5 +306,6 @@ function Footer() {
     </div>
   );
 }
+
 
 export default Footer;
