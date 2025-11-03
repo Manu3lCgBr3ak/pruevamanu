@@ -1,4 +1,4 @@
-import '../../../Global.css';
+import '../../../GLobal.css';
 import Card from '../../../components/ui/Card';
 import { Btn_GetNow } from '../../../components/ui/Buttons';
 
@@ -116,5 +116,6 @@ function Plans() {
     </div>
   );
 }
+
 
 export default Plans;
