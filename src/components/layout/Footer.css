@@ -1,0 +1,8 @@
+.Ar_footer_pd > .Ar_footer_fc:first-child{
+  align-self: flex-start;
+  margin-left: -2rem;
+}
+.Ar_footer_pd > .Ar_footer_lc:last-child{
+  align-self: flex-end;
+  margin-right: -2rem;
+}

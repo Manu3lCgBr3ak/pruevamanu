@@ -1,0 +1,3 @@
+.Ar_Padre_Fchild > .Ar_Ico_Fchild:first-child{
+  align-self: flex-start;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Meta descripción principal (clave para SEO en Google) -->
+    <meta name="description" content="Arcadia Studio ofrece soluciones digitales simples y asequibles para emprendedores y PYMES en México: web, tienda en línea, planes mensuales y soporte humano.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://arcadia-studio.shop/" />
+
+    <!-- Preconexiones a Google Fonts (limpias y sin espacios) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/Arcadia_ico.png" id="favicon" />
+
+    <!-- Título optimizado para SEO y claridad -->
+    <title>Arcadia Studio | Web y tienda en línea para PYMES en México</title>
+
+    <!-- Open Graph (para compartir en redes sociales) -->
+    <meta property="og:title" content="Arcadia Studio | Web para emprendedores en México">
+    <meta property="og:description" content="Planes mensuales desde $299 MXN. Presencia web profesional, tienda en línea y soporte incluido. Sin compromisos largos.">
+    <meta property="og:image" content="https://arcadia-studio.shop/og-arcadia.jpg">
+    <meta property="og:url" content="https://arcadia-studio.shop/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Arcadia Studio | Web para PYMES en México">
+    <meta name="twitter:description" content="Crea tu sitio web o tienda en línea con planes mensuales, sin sorpresas. Ideal para cafeterías, clínicas, diseñadores y más.">
+    <meta name="twitter:image" content="https://arcadia-studio.shop/og-arcadia.jpg">
+
+    <!-- Script de favicon/título dinámico (ajustado al nuevo título) -->
+    <script>
+      (function () {
+        const favicon = document.getElementById('favicon');
+        if (!favicon) return;
+
+        const originalIcon = '/Arcadia_ico.png';
+        const hiddenIcon = '/Arcadia_ico_apagado.png';
+        const originalTitle = 'Arcadia Studio | Web y tienda en línea para PYMES en México';
+        const hiddenTitle = '¡Vuelve con nosotros!';
+
+        function handleVisibilityChange() {
+          const isHidden = document.hidden;
+          favicon.href = isHidden ? hiddenIcon : originalIcon;
+          document.title = isHidden ? hiddenTitle : originalTitle;
+        }
+
+        document.addEventListener('visibilitychange', handleVisibilityChange);
+      })();
+    </script>
+  </head>
+  
+  <body class="scrollbar-arcadia">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
